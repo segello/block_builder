@@ -17,7 +17,8 @@ impl Plugin for BuilderPlugin {
             .add_systems(Update, draw_cursor_and_spawn_block)
             .add_systems(Update, spawn_block_on_event)
             .add_systems(Update, move_cam)
-            .add_systems(Update, quit_on_escape);
+            .add_systems(Update, quit_on_escape)
+            .add_systems(Update, check_and_despawn_block);
     } 
 }
 
