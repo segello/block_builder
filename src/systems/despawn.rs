@@ -1,7 +1,7 @@
 use crate::components::Block;
 use bevy::prelude::*;
 
-const DESPAWN_HEIGHT: f32 = -50.0;
+const DESPAWN_HEIGHT: f32 = -100.0;
 
 pub fn check_and_despawn_block(
     mut commands: Commands,
